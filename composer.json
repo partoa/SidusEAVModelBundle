@@ -25,7 +25,7 @@
     "require": {
         "php": ">=7.3",
         "ext-mbstring": "*",
-        "sidus/base-bundle": "~1.0"
+        "sidus/base-bundle": "^1.1"
     },
     "suggest": {
         "sidus/eav-bootstrap-bundle": "Easy Twitter Bootstrap integration"
