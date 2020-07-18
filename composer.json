@@ -1,5 +1,5 @@
 {
-    "name": "sidus/eav-model-bundle",
+    "name": "partoa/eav-model-bundle",
     "description": "Symfony3 & Doctrine implementation of a Entity-Attribute-Value model, easily extendable",
     "keywords": [
         "eav",
