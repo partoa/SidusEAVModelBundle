@@ -25,7 +25,7 @@
     "require": {
         "php": ">=7.3",
         "ext-mbstring": "*",
-        "partoa/base-bundle": "dev-master"
+        "partoa/base-bundle": "master"
     },
     "suggest": {
         "sidus/eav-bootstrap-bundle": "Easy Twitter Bootstrap integration"
