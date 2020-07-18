@@ -24,16 +24,9 @@
     },
     "require": {
         "php": ">=7.3",
-        "ext-mbstring": "*",
-        "partoa/base-bundle": "master"
+        "ext-mbstring": "*"
     },
     "suggest": {
         "sidus/eav-bootstrap-bundle": "Easy Twitter Bootstrap integration"
-    },
-    "repositories": [
-        {
-            "type": "vcs",
-            "url":  "https://github.com/partoa/SidusBaseBundle.git"
-        }
-    ]
+    }
 }
