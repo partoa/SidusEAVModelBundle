@@ -58,9 +58,9 @@ class SidusEAVModelExtension extends Extension
         $container->setParameter('sidus_eav_model.context.global_mask', $config['global_context_mask']);
 
         // Injecting custom doctrine type
-        $doctrineTypes = $container->getParameter('doctrine.dbal.connection_factory.types');
-        $doctrineTypes['sidus_family'] = ['class' => FamilyType::class, 'commented' => false];
-        $container->setParameter('doctrine.dbal.connection_factory.types', $doctrineTypes);
+        //$doctrineTypes = $container->getParameter('doctrine.dbal.connection_factory.types');
+        //$doctrineTypes['sidus_family'] = ['class' => FamilyType::class, 'commented' => false];
+        //$container->setParameter('doctrine.dbal.connection_factory.types', $doctrineTypes);
 
         // Load services config
         $loader = new Loader\YamlFileLoader($container, new FileLocator(__DIR__.'/../Resources/config/services'));
