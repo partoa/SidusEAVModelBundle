@@ -30,7 +30,7 @@ class Configuration implements ConfigurationInterface
     public function getConfigTreeBuilder()
     {
         $treeBuilder = new TreeBuilder('sidus_eav_model');
-//         $rootNode = $treeBuilder->root('sidus_eav_model');
+        $rootNode = $treeBuilder->getRootNode();
         /** @var NodeBuilder $attributeDefinition */
         $attributeDefinition = $rootNode
             ->children()
