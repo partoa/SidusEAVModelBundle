@@ -50,8 +50,8 @@ class SidusEAVModelExtension extends Extension
         $config = $this->processConfiguration($configuration, $configs);
         $this->globalConfig = $config;
 
-        $container->setParameter('sidus_eav_model.entity.data.class', $config['data_class']);
-        $container->setParameter('sidus_eav_model.entity.value.class', $config['value_class']);
+        $container->setParameter('sidus_eav_model.entity.data.class', empty($config['data_class'])?'':$config['data_class']);
+        $container->setParameter('sidus_eav_model.entity.value.class', empty($config['value_class'])?'':$config['value_class']);
         $container->setParameter('sidus_eav_model.form.collection_type', $config['collection_type']);
         $container->setParameter('sidus_eav_model.context.form_type', $config['context_form_type']);
         $container->setParameter('sidus_eav_model.context.default_context', $config['default_context']);
