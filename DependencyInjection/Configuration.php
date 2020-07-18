@@ -34,8 +34,8 @@ class Configuration implements ConfigurationInterface
         /** @var NodeBuilder $attributeDefinition */
         $attributeDefinition = $rootNode
             ->children()
-                ->scalarNode('data_class')->isRequired()->end()
-                ->scalarNode('value_class')->isRequired()->end()
+                ->scalarNode('data_class')->end()
+                ->scalarNode('value_class')->end()
                 ->scalarNode('family_class')->defaultValue(Family::class)->end()
                 ->booleanNode('serializer_enabled')->defaultFalse()->end()
                 ->scalarNode('collection_type')->defaultValue(CollectionType::class)->end()
